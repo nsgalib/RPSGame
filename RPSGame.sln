@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPSGame.Site", "RPSGame.Site\RPSGame.Site.csproj", "{FD4F6262-F07C-427F-B115-E3971CA640B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPSGame.Library", "RPSGame.Library\RPSGame.Library.csproj", "{66F71CEC-93A6-473F-9EB0-93A9E401F5A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD4F6262-F07C-427F-B115-E3971CA640B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4F6262-F07C-427F-B115-E3971CA640B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4F6262-F07C-427F-B115-E3971CA640B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4F6262-F07C-427F-B115-E3971CA640B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F71CEC-93A6-473F-9EB0-93A9E401F5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F71CEC-93A6-473F-9EB0-93A9E401F5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F71CEC-93A6-473F-9EB0-93A9E401F5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F71CEC-93A6-473F-9EB0-93A9E401F5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00CE5639-5FF2-4C90-A90B-2242FC5340F6}
+	EndGlobalSection
+EndGlobal

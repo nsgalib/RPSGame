@@ -1,0 +1,32 @@
+﻿@model RPSGame.Library.Models.GameModel
+@using RPSGame.Library.Enums
+@{
+    ViewBag.Title = "Game: Rock, Paper, Scissors";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="mainDiv">
+
+            <div class="col-md-12">
+                @using (Html.BeginForm("Index", "Game", FormMethod.Post))
+                {
+                    <h3>Player 1</h3>
+                    <label>@Html.RadioButtonFor(model => model.PlayerOneMove, PlayerMoveOptions.Computer) Computer</label>
+                    <label>@Html.RadioButtonFor(model => model.PlayerOneMove, PlayerMoveOptions.Rock) Rock</label>
+                    <label>@Html.RadioButtonFor(model => model.PlayerOneMove, PlayerMoveOptions.Paper) Paper</label>
+                    <label>@Html.RadioButtonFor(model => model.PlayerOneMove, PlayerMoveOptions.Scissors) Scissors</label>
+
+                    <br /><br />
+                    <h3>Player 2</h3>
+                    <label>@Html.RadioButtonFor(model => model.PlayerTwoMove, PlayerMoveOptions.Computer) Computer</label>
+
+                    <br /><br />
+                    <h3>@Model.Result</h3>
+                    <input type="submit" class="btn-primary btn-small" value="Play Game" />
+                }
+            </div>
+
+        </div>
+    </div>
+</div>
