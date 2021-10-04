@@ -14,16 +14,23 @@ namespace RPSGame.Site.Controllers
 		[HttpGet]
 		public ActionResult Index()
 		{
-			GameModel gameModel = new GameModel();
-			gameModel.Result = string.Empty;
-			return View(gameModel);
+			try
+			{
+				GameModel gameModel = new GameModel();
+				gameModel.Result = string.Empty;
+				return View(gameModel);
+			}
+			catch(Exception ex)
+			{
+				throw;
+			}
+			
 		}
 
 		[HttpPost]
 		public ActionResult Index(GameModel gameModel)
 		{
 			gameModel.Result = string.Empty;
-			string playerOptions = string.Empty;
 			IPlayer player1 = null;
 			IPlayer player2 = null;
 
@@ -67,7 +74,7 @@ namespace RPSGame.Site.Controllers
 			IGame game = new Game(player1, player2);
 			Result gameResult = game.DeclareWinner();
 
-			string playersMoves = " ( Player1: " + player1.Move.ToString() + "/ Player2: " + player2.Move.ToString() + ")";
+			string playersMoves = " ( Player1: " + player1.Move.ToString() + " / Player2: " + player2.Move.ToString() + ")";
 
 			switch (gameResult)
 			{
