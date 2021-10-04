@@ -64,5 +64,7 @@ namespace GameRPS.Library.Models
 			return result;
 		}
 	}
+
+	public class UndefinedPlayer : ApplicationException { };
 }
 
